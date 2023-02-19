@@ -41,6 +41,18 @@ string[] arr1 = {"Hello", "2", "world", ":-)"};
 			}
 		}
 		
+		void PrintTask(string[] array)
+		{
+			Console.WriteLine("Source array:");
+			PrintArray(array);
+			string[] shortArray = GetShortWordsArray(array);
+			Console.WriteLine($"Result array (words are less or equal than {MAX_WORD_LENGTH} symbols)");
+			PrintArray(shortArray);
+			Console.WriteLine();
+		}
 		
+		PrintTask(arr1);
+		PrintTask(arr2);
+		PrintTask(arr3);
     	
 	
